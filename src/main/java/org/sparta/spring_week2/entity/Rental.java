@@ -65,19 +65,6 @@ public class Rental extends Timestamped {
         this.returnedDate = LocalDateTime.now();
     }
 
-//    public void setDueDate(LocalDate dueDate) {
-//        this.dueDate = dueDate;
-//    }
-
-
-
-//    // Book 객체 생성
-//    Book book = new Book();
-//    // Book 객체의 bookId 설정
-//    book.setBookId(bookId);
-//    // Rental 엔터티의 book 필드에 Book 객체 설정
-//    this.book = book;
-
     public void setReturnStatus(boolean is_returned) {
         this.is_returned = is_returned;
     }

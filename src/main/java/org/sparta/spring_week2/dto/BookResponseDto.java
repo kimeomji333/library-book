@@ -2,9 +2,7 @@ package org.sparta.spring_week2.dto;
 
 
 import lombok.Getter;
-import lombok.Setter;
 import org.sparta.spring_week2.entity.Book;
-import org.sparta.spring_week2.entity.Member;
 
 import java.time.LocalDateTime;
 @Getter

@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.sparta.spring_week2.dto.MemberRequestDto;
-import org.sparta.spring_week2.dto.MemberResponseDto;
 
 @Entity
 @Getter
@@ -33,8 +32,7 @@ public class Member extends Timestamped {
     private String address;
 
 
-    public Member(MemberRequestDto memberRequestDto) { // service : RequestDto → Entity
-        // ID는 하지 않는다?
+    public Member(MemberRequestDto memberRequestDto) {
         this.name = memberRequestDto.getName();
         this.gender = memberRequestDto.getGender();
         this.residentRegistrationNumber = memberRequestDto.getResidentRegistrationNumber();

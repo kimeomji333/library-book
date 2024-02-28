@@ -1,16 +1,8 @@
 package org.sparta.spring_week2.entity;
 
-// 은미님 이 부분 추가 했습니다.
-// memo 프로젝트 만들 때 있었던 Timestamped 내용입니다. (내용은 코드스니펫 복붙입니다)
-// 사용 방법 : 각 entity 에 extends Timestamped 하면 됩니다.
-
-// 제가 생각하기에 공통된 부분들은 다른 클래스에 묶어서 보관하는 용도로 사용하려고 따로 만드는 것 같아요!
-// 이 클래스만 만들어 놓고, 아직 extends Timestamped 는 하지 않은 상황입니다.
-
 import jakarta.persistence.*;
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
